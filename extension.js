@@ -92,13 +92,19 @@ export default class CustomOSDExtension extends Extension {
       
       osdW._levLabel.set_pivot_point(0.5,0.5);  
       osdW._levLabel.rotation_angle_z = 90.0;
+
+      osdW._icon.set_pivot_point(0.5,0.5);  
+      osdW._icon.rotation_angle_z = 90.0;
     }
     else {
       osdW._hbox.set_pivot_point(0.5,0.5);
-      osdW._hbox.rotation_angle_z = 0;
+      osdW._hbox.rotation_angle_z = 0.0;
   
       osdW._levLabel.set_pivot_point(0.5,0.5);
       osdW._levLabel.rotation_angle_z = 0.0;
+
+      osdW._icon.set_pivot_point(0.5,0.5);  
+      osdW._icon.rotation_angle_z = 0.0;
     }
   }
 
